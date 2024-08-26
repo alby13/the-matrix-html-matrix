@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Matrix - Character Matrix</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 0 10px green;
+        }
+        th, td {
+            border: 1px solid green;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #003300; /* Dark green */
+        }
+        tr:nth-child(even) {
+            background-color: #004400; /* Slightly lighter green */
+        }
+        tr:hover {
+            background-color: #005500; /* Highlight on hover */
+        }
+        /* Add some animations */
+        tr {
+            transition: background-color 0.3s ease;
+        }
+        /* Style the tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #005500;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 105%;
+        }
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent #005500 transparent transparent;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">The Matrix - Character Matrix</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Role</th>
+                <th>Quote</th>
+                <th>Theme</th>
+                <th>Significance</th>
+                <th>Relationships</th>
+                <th>Abilities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Neo</td>
+                <td>The One</td>
+                <td class="tooltip">"I know kung fu."
+                    <span class="tooltiptext">A classic Neo quote.</span>
+                </td>
+                <td>Choice</td>
+                <td>Represents the journey of self-discovery and destiny.</td>
+                <td>Morpheus, Trinity, Oracle</td>
+                <td>Superhuman strength, agility, and reflexes</td>
+            </tr>
+            <tr>
+                <td>Trinity</td>
+                <td>Heroine</td>
+                <td class="tooltip">"The Matrix is everywhere."
+                    <span class="tooltiptext">Trinity's insight into the Matrix.</span>
+                </td>
+                <td>Reality vs. Illusion</td>
+                <td>Symbolizes strength and the power of love.</td>
+                <td>Neo, Morpheus, Cypher</td>
+                <td>Expert marksmanship and hand-to-hand combat</td>
+            </tr>
+            <tr>
+                <td>Morpheus</td>
+                <td>Mentor</td>
+                <td class="tooltip">"What if I told you...?"
+                    <span class="tooltiptext">Morpheus' introduction to the Matrix.</span>
+                </td>
+                <td>Belief</td>
+                <td>Embodies faith in the potential of others.</td>
+                <td>Neo, Trinity, Oracle</td>
+                <td>Exceptional leadership and strategic thinking</td>
+            </tr>
+            <tr>
+                <td>Agent Smith</td>
+                <td>Antagonist</td>
+                <td class="tooltip">"I am not here to talk about your future."
+                    <span class="tooltiptext">Agent Smith's menacing tone.</span>
+                </td>
+                <td>Control</td>
+                <td>Represents the oppressive nature of the system.</td>
+                <td>Neo, Morpheus, Trinity</td>
+                <td>Superhuman strength, speed, and agility</td>
+            </tr>
+            <tr>
+                <td>Oracle</td>
+                <td>Guide</td>
+                <td class="tooltip">"Know thyself."
+                    <span class="tooltiptext">The Oracle's wise words.</span>
+                </td>
+                <td>Fate vs. Free Will</td>
+                <td>Encourages introspection and understanding of one's path.</td>
+                <td>Neo, Morpheus, Trinity</td>
+                <td>Precognitive abilities and prophetic insight</td>
+            </tr>
+            <tr>
+                <td>Cypher</td>
+                <td>Traitor</td>
+                <td class="tooltip">"Why, oh why, didn't I take the blue pill?"
+                    <span class="tooltiptext">Cypher's regretful words.</span>
+                </td>
+                <td>Betrayal</td>
+                <td>Represents the temptation of comfort and ignorance.</td>
+                <td>Morpheus, Trinity, Agent Smith</td>
+                <td>Skilled programmer and hacker</td>
+            </tr>
+            <tr>
+                <td>Tank</td>
+                <td>Operator</td>
+                <td class="tooltip">"You take the blue pill, the story ends."
+                    <span class="tooltiptext">Tank's warning to Neo.</span>
+                </td>
+                <td>Sacrifice</td>
+                <td>Embodies loyalty and dedication to the crew.</td>
+                <td>Morpheus, Trinity, Neo</td>
+                <td>Skilled operator and mechanic</td>
+            </tr>
+            <tr>
+                <td>Apoc</td>
+                <td>Rebel</td>
+                <td class="tooltip">"I'm not afraid of death."
+                    <span class="tooltiptext">Apoc's bravery.</span>
+                </td>
+                <td>Courage</td>
+                <td>Represents the willingness to risk everything for freedom.</td>
+                <td>Morpheus, Trinity, Neo</td>
+                <td>Skilled fighter and rebel</td>
+            </tr>
+            <tr>
+                <td>Switch</td>
+                <td>Rebel</td>
+                <td class="tooltip">"Not like this."
+                    <span class="tooltiptext">Switch's final words.</span>
+                </td>
+                <td>Loyalty</td>
+                <td>Embodies devotion to the crew and the cause.</td>
+                <td>Apoc, Morpheus, Trinity</td>
+                <td>Skilled fighter and rebel</td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>Rebel</td>
+                <td class="tooltip">"I'm going to go get some grub."
+                    <span class="tooltiptext">Mouse's final words.</span>
+                </td>
+                <td>Innocence</td>
+                <td>Represents the vulnerability of those who are unaware.</td>
+                <td>Apoc, Switch, Morpheus</td>
+                <td>Skilled programmer and hacker</td>
+            </tr>
+            <tr>
+                <td>Agent Jones</td>
+                <td>Agent</td>
+                <td class="tooltip">"Only human."
+                    <span class="tooltiptext">Agent Jones' dehumanizing words.</span>
+                </td>
+                <td>Oppression</td>
+                <td>Represents the relentless pursuit of the Agents.</td>
+                <td>Agent Smith, Agent Brown</td>
+                <td>Superhuman strength, speed, and agility</td>
+            </tr>
+            <tr>
+                <td>Agent Brown</td>
+                <td>Agent</td>
+                <td class="tooltip">"He's beginning to believe."
+                    <span class="tooltiptext">Agent Brown's observation.</span>
+                </td>
+                <td>Surveillance</td>
+                <td>Embodies the constant monitoring of humanity.</td>
+                <td>Agent Smith, Agent Jones</td>
+                <td>Superhuman strength, speed, and agility</td>
+            </tr>
+            <tr>
+                <td>The Merovingian</td>
+                <td>Information Broker</td>
+                <td class="tooltip">"Some people go their whole lives without ever waking up."
+                    <span class="tooltiptext">The Merovingian's insight.</span>
+                </td>
+                <td>Illusion</td>
+                <td>Represents the blurred lines between reality and fantasy.</td>
+                <td>Persephone, Seraph</td>
+                <td>Exceptional knowledge and manipulation</td>
+            </tr>
+            <tr>
+                <td>Persephone</td>
+                <td>The Merovingian's Wife</td>
+                <td class="tooltip">"I'm trying to understand why you risked so much to save him."
+                    <span class="tooltiptext">Persephone's curiosity.</span>
+                </td>
+                <td>Compassion</td>
+                <td>Embodies the human desire for connection and understanding.</td>
+                <td>The Merovingian, Neo, Trinity</td>
+                <td>Skilled fighter and strategist</td>
+            </tr>
+            <tr>
+                <td>Seraph</td>
+                <td>Protector</td>
+                <td class="tooltip">"You do not truly know someone until you fight them."
+                    <span class="tooltiptext">Seraph's wisdom.</span>
+                </td>
+                <td>Honor</td>
+                <td>Represents the importance of loyalty and duty.</td>
+                <td>The Merovingian, Neo, Trinity</td>
+                <td>Exceptional martial arts skills</td>
+            </tr>
+            <tr>
+                <td>The Trainman</td>
+                <td>Program</td>
+                <td class="tooltip">"You don't get to say 'no' to me."
+                    <span class="tooltiptext">The Trainman's authority.</span>
+                </td>
+                <td>Control</td>
+                <td>Embodies the rigid structure and rules of the Matrix.</td>
+                <td>The Merovingian, Neo, Trinity</td>
+                <td>Ability to control the Matrix's infrastructure</td>
+            </tr>
+            <tr>
+                <td>Bane</td>
+                <td>Program</td>
+                <td class="tooltip">"I'm looking for Neo."
+                    <span class="tooltiptext">Bane's single-minded purpose.</span>
+                </td>
+                <td>Persistence</td>
+                <td>Represents the relentless pursuit of a goal.</td>
+                <td>Neo, Trinity, The Merovingian</td>
+                <td>Superhuman strength and agility</td>
+            </tr>
+            <tr>
+                <td>The Kid</td>
+                <td>Rebel</td>
+                <td class="tooltip">"I want to help."
+                    <span class="tooltiptext">The Kid's eagerness.</span>
+                </td>
+                <td>Hope</td>
+                <td>Embodies the desire for a better future.</td>
+                <td>Neo, Trinity, Morpheus</td>
+                <td>Skilled hacker and programmer</td>
+            </tr>
+            <tr>
+                <td>Zee</td>
+                <td>Rebel</td>
+                <td class="tooltip">"You can't control the future, but you can't give up either."
+                    <span class="tooltiptext">Zee's wisdom.</span>
+                </td>
+                <td>Resilience</td>
+                <td>Represents the human capacity for adaptation and survival.</td>
+                <td>Link, Tank, Morpheus</td>
+                <td>Skilled medic and strategist</td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td>Operator</td>
+                <td class="tooltip">"I'm not gonna let you die, Morpheus."
+                    <span class="tooltiptext">Link's loyalty.</span>
+                </td>
+                <td>Sacrifice</td>
+                <td>Embodies the willingness to risk everything for others.</td>
+                <td>Morpheus, Trinity, Neo</td>
+                <td>Skilled operator and mechanic</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
